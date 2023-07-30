@@ -1,3 +1,3 @@
 import { aboba } from "./test";
 
-aboba();
+aboba(123);

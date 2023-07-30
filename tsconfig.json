@@ -1,0 +1,20 @@
+{
+    "compilerOptions": {
+      "outDir": "./dist/",
+      "noImplicitAny": true,
+      "module": "es6",
+      "target": "es5",
+      "jsx": "react",
+      "allowJs": true,
+      "moduleResolution": "node",
+      // позволяет работать с пакетами на обычном js через import
+      "esModuleInterop": true,
+      // позволяет имортить как import default. Чтобы просто импортить вместо import * as LIB.   
+      "allowSyntheticDefaultImports": true,
+    },
+    "ts-node": {
+      "compilerOptions": {
+        "module": "CommonJS"
+      }
+    },
+}
