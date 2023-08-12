@@ -6,7 +6,7 @@ logs
 
 node_modules
 bower_components
-build
+/build
 
 *.sublime*
 

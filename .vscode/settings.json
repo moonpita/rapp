@@ -1,0 +1,6 @@
+{
+    "editor.codeActionsOnSave": {
+        "editor.codeActionsOnSave": true,
+        "editor.detectIndentation": false,
+    }
+}
