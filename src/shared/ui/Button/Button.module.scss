@@ -1,0 +1,15 @@
+.Button {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  
+  color: var(--primary-color);
+  justify-content: center;
+}
+
+.clear {
+  padding: 0;
+  border: none;
+  background: none;
+  outline: none;
+}

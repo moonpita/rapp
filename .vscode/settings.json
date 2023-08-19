@@ -2,5 +2,9 @@
     "editor.codeActionsOnSave": {
         "editor.codeActionsOnSave": true,
         "editor.detectIndentation": false,
-    }
+    },
+    "i18n-ally.localesPaths": [
+        "public/locales",
+        "src/shared/config/i18n"
+    ]
 }
