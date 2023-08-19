@@ -1,6 +1,6 @@
-import webpack from "webpack";
-import MiniCssExtractPlugin from "mini-css-extract-plugin";
-import { BuildOptions } from "./types/config";
+import webpack from 'webpack';
+import MiniCssExtractPlugin from 'mini-css-extract-plugin';
+import { BuildOptions } from './types/config';
 
 export function buildLoaders(options: BuildOptions): webpack.RuleSetRule[] {
   const typescriptLoader = {
@@ -16,9 +16,9 @@ export function buildLoaders(options: BuildOptions): webpack.RuleSetRule[] {
       loader: 'babel-loader',
       options: {
         presets: ['@babel/preset-env'],
-        "plugins": [
+        plugins: [
           [
-            "i18next-extract",
+            'i18next-extract',
             {
               locales: ['ru', 'en'],
               keyAsDefaultValue: true,
@@ -52,10 +52,10 @@ export function buildLoaders(options: BuildOptions): webpack.RuleSetRule[] {
           modules: {
             auto: (resPath: string) => Boolean(resPath.includes('.module.scss')),
             localIdentName: options.isDev ? '[path][name]__[local]--[hash:base64:3]' : '[hash:base64:8]',
-          }
+          },
         },
       },
-      "sass-loader",
+      'sass-loader',
     ],
   };
 
