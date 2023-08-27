@@ -1,24 +1,31 @@
 {
+  "compilerOptions": {
+    "outDir": "./dist/",
+    "baseUrl": ".",
+    "paths": {
+      "*": [
+        "./src/*"
+      ],
+    },
+    "noImplicitAny": true,
+    "module": "ESNext",
+    "target": "es5",
+    "jsx": "react-jsx",
+    "allowJs": true,
+    "moduleResolution": "node",
+    // позволяет работать с пакетами на обычном js через import
+    "esModuleInterop": true,
+    // позволяет имортить как import default. Чтобы просто импортить вместо import * as LIB.   
+    "allowSyntheticDefaultImports": true,
+  },
+  "ts-node": {
     "compilerOptions": {
-      "outDir": "./dist/",
-      "baseUrl": ".",
-      "paths": {
-        "*": ["./src/*"],
-      },
-      "noImplicitAny": true,
-      "module": "ESNext",
-      "target": "es5",
-      "jsx": "react-jsx",
-      "allowJs": true,
-      "moduleResolution": "node",
-      // позволяет работать с пакетами на обычном js через import
-      "esModuleInterop": true,
-      // позволяет имортить как import default. Чтобы просто импортить вместо import * as LIB.   
-      "allowSyntheticDefaultImports": true,
-    },
-    "ts-node": {
-      "compilerOptions": {
-        "module": "CommonJS"
-      }
-    },
+      "module": "CommonJS"
+    }
+  },
+  "include": [
+    "./config/jest/setupTests.ts",
+    "./src/**/*.ts",
+    "./src/**/*.tsx",
+  ]
 }
