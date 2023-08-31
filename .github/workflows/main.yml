@@ -2,7 +2,7 @@ name: Lint, test, build
 on:
   push:
     branches: [ master ]
-  pull_requiest:
+  pull_request:
     branches: [ master ]
 jobs:
   pipeline:
